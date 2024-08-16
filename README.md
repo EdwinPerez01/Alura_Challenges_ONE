@@ -29,7 +29,9 @@ Así que ya sabes, si quieres mantener tus conversaciones privadas y seguras, es
 
 ## Screenshots
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![Vista en computadoras](https://github.com/user-attachments/assets/7becc835-a11f-4e0c-a0c7-88e2a5fe2016)
+![Vista en mobiles](https://github.com/user-attachments/assets/26f4b0d9-0d7d-4373-a3b6-c2367e8d2e14)
+![Vista en tablets](https://github.com/user-attachments/assets/6027d8f3-de38-4a0f-a908-e29da6e401a6)
 
 
 ## Tecnologías Utilizadas
