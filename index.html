@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <title>Encriptador de texto</title>
+</head>
+<body>
+    <header>
+        <img class="logo" src="assets/Logo Alura.jpg" alt="logo de alura">
+    </header>
+    <main>
+        <section>
+            <h1 class="presentacion__contenido__titulo">
+                Alura Challenges ONE
+                </h1>
+                <p class="presentacion__contenido__texto">¡Hola! Bienvenido/a al encriptador de texto.
+
+                </p>
+            <textarea class="text-area" cols="30" rows="10" placeholder="Ingrese su texto aqui"></textarea>
+            <div>
+                <h6 class="informacion">Solo letras minúsculas y sin acentos</h6>
+            </div>
+            <div class="botones">
+                <button class="btn-encriptar" onclick="btnEncriptar()">Encriptar</button>
+                <button class="btn-desencriptar" onclick="btnDesncriptar()">Desencriptar</button>
+            </div>
+        </section>
+        <section>
+            <textarea class="mensaje" cols="30" rows="11" id="myOutput"></textarea>
+            <div>
+                <button class="btn-copiar" onclick="copyText()">Copiar</button>
+            </div>
+            <script>
+                function copyText() {
+                    let output = document.getElementById("myOutput");
+                    
+                    output.select();
+                    output.setSelectionRange(0, 99999);
+            
+                    navigator.clipboard.writeText(output.value);
+            
+                }
+            </script>            
+        </section>
+    </main>
+    <script src="script.js"></script>
+    <footer>
+        <div class="presentacion__enlaces">
+            <h2>Accede a mis redes:</h2>
+                <a href="https://www.linkedin.com/in/edwin-perez01/">
+                    <img id="linkedin-logo" src="assets/LinkedIn_2021.svg.png" alt="Logo de linkedin"></a>
+                <a class="presentacion__enlaces__link" href="https://github.com/EdwinPerez01">
+                    <img id="github-logo" src="assets/GitHub_Invertocat_Logo.svg.png" alt="Logo de github"></a>
+        </div>
+        <p class="footer">Desarrollado por Edwin</p>
+    </footer>
+</body>
+</html>
